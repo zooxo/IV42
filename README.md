@@ -11,7 +11,7 @@ the "most precise calculator in the world".
 
 As the DM42 is an "open system" it is possible to run other software on top of
 the operating system (DMCP). And that is, where IV42 comes in. IV42 is a small,
-fast, simple, convienient and powerful calculator that integrates to the DM42
+fast, simple, convenient and powerful calculator that integrates to the DM42
 hardware (primarily the keyboard layout) in an optimal way. There is no need for
 particular key labels or stencils!
 
