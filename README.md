@@ -1,12 +1,17 @@
 # IV42 - A Powerful Programable RPN Calculator for the DM42 Hardware based on FORTH
 
-... coming soon
+<h1>... coming soon</h1>
 
 ![IV42](https://user-images.githubusercontent.com/16148023/157909679-c643065a-213b-4ed8-af24-205c9a2d4bd3.png)
 
 See a short video of IV42 at:  https://youtu.be/sDT_JJClNMI
 
 ```
+____________________
+
+ PREAMBLE
+____________________
+
 The DM42 calculator is a genuine device. A brilliant LCD display, good keys, a
 USB disk and a powerful processor - all low powered by a single battery cell.
 On the very stable operating system (DMCP) runs Free42 - a perfect simulator of
