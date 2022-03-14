@@ -1,0 +1,581 @@
+<html>
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>IV42 - DOCUMENTATION</title>
+<style>.button{background:#444444; color:#FFFFFF;}.lcd{background:#CCCCCC;}</style>
+</head>
+
+<body>
+
+
+<h2 id="Top">Navigation</h2><br>
+
+<table><tbody>
+<tr><td><span class="button">F1</span> Exit &nbsp; &nbsp; </td><td><span class="button">F2</span> <a href="#Home">&rarr;Home</a></td></tr>
+<tr><td><span class="button">ENTER</span> Link &nbsp;</td><td><span class="button">÷</span> Page Up</td></tr>
+<tr><td><span class="button">▲</span> Previous </td><td><span class="button">×</span> Page Down</td></tr>
+<tr><td><span class="button">▼</span> Next &nbsp; &nbsp; &nbsp; </td><td><span class="button">-</span> Line Up</td></tr>
+<tr><td><span class="button">EXIT</span> Exit &nbsp;</td><td><span class="button">+</span> Line Down</td></tr>
+</tbody></table><br>
+
+
+<br><h2 id="Home">Contents</h2>
+
+<ul>
+<li><a href="#Installation">Installing IV42</a></li>
+<li><a href="#Help">Help</a></li>
+<li><a href="#Display">Display</a></li>
+<li><a href="#Messages">Messages</a></li>
+<li><a href="#Annunciators">Annunciators</a></li>
+<li><a href="#Dictionary">Dictionary</a></li>
+<li><a href="#RS">The Really Super Key</a></li>
+<li><a href="#Browsing">Browsing Menus</a></li>
+<li><a href="#Complex">Complex Numbers</a></li>
+<li><a href="#Programming">Programming</a></li>
+<li><a href="#Calculus">Calculus</a></li>
+<li><a href="#Plotting">Plotting</a></li>
+<li><a href="#Matrices">Matrices</a></li>
+<li><a href="#Conversions">Conversions</a></li>
+<li><a href="#Commands">Commands and Keys</a></li>
+<li><a href="#Constants">Physical Constants</a></li>
+<li><a href="#ASCII">ASCII Table</a></li>
+</ul>
+
+
+<br><h2 id="Installation">Installing IV42</h2>
+
+Please note that you will loose all user data of your DM42 (ie. user programs or settings) - make a backup!
+
+<br><h3>Install IV42:</h3>
+<ul>
+<li>First load IV42-xxx.pgm and (for desired later back switch to DM42) DM42-x.xx.pgm to the root directory of the USB disk.</li>
+<li>In your DM42 calculator goto <span class="button">SETUP</span> (SHIFT-0)</li>
+<li>Enter menu point <span class="lcd">5. System ></span></li>
+<li>Goto system menu with <span class="lcd">2. Enter System Menu</span></li>
+<li>Leave DM42 and switch back to the operating system (DMCP) with <span class="lcd">3. Reset to DMCP menu</span></li>
+<li>Load another program with <span class="lcd">3. Load Program</span></li>
+<li>Select the IV42 program IV42-xxx.pgm</li>
+<li><span class="lcd">Confirm with ENTER</span></li>
+<li><span class="lcd">Press any key to start</span></li>
+<li><span class="lcd">Press EXIT to continue ...</span></li>
+<li>You are running IV42 - have fun!</li>
+</ul>
+
+<br><h3>Reinstall DM42:</h3>
+<ul>
+<li>Switch back to the operating system (DMCP) with <span class="button">SETUP</span> (SHIFT-0)</li>
+<li>Load another program with <span class="lcd">3. Load Program]</span></li>
+<li>Select the DM42 program DM42-x.xx.pgm</li>
+<li><span class="lcd">Confirm with ENTER</span></li>
+<li><span class="lcd">Press any key to start</span></li>
+<li><span class="lcd">Press EXIT to continue ...</span></li>
+<li>You are running DM42 - thanks for trying IV42</li>
+</ul>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+<br><h2 id="Help">Help</h2>
+To view the HTML help file (iv42help.htm) execute the command <span class="lcd">HELP</span> or press the button <span class="button">CUSTOM</span>. Please note that the file iv42help.htm has to be on the USB disk in the folder IV42.<br>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+<br><h2 id="Display">Display</h2>
+In general the display consists of three sections (status line, TOS and F-keys). Please note that you can invert the display for each section by using the command <span class="lcd">DISP</span> or pressing the button <span class="button">DISP</span>.<br>
+<br>
+The status line shows on the left side text/error messages (see chapter <a href="#Messages">Messages</a>), titles or the alpha stack and on the right side system annunciators (see chapter <a href="#Annunciators">Annunciators)</a>.<br>
+<br>
+The TOS section shows the number on the top of the stack in big digits. Please note that you can view the TOS with all available digits (double format) in the status line by selecting <span class="lcd">SHOW</span> or <span class="button">SHOW</span>.<br>
+<br>
+In the F-key section you can see the labels for all 18 (3 rows with 6 keys) function keys.<br>
+<br>
+Finally there are specific display structures for plotting functions (see chapter <a href="#Plotting">Plotting</a>) or editing programs (see chapter <a href="#Programming">Programming)</a>.<br>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+<br><h2 id="Messages">Messages</h2>
+<ul>
+<li><span class="lcd">ERROR</span> - Infinite operation</li>
+<li><span class="lcd">FILE ERROR</span> - File loading error</li>
+<li><span class="lcd">HOLD</span> - Program on hold</li>
+<li><span class="lcd">LOADED</span> - File loaded</li>
+<li><span class="lcd">LOOP ERROR</span> - Loop, nest or condition error</li>
+<li><span class="lcd">NO PROGRAM</span> - Desired program not loaded</li>
+<li><span class="lcd">NO SPACE</span> - No space to insert</li>
+<li><span class="lcd">RUNNING</span> - Running (solve, integrate, plot calculation)</li>
+<li><span class="lcd">SAVED</span> - File saved</li>
+<li><span class="lcd">STOPPED</span> - Program stopped</li>
+</ul>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+<br><h2 id="Annunciators">Annunciators</h2>
+Annunciators (6 most right characters of status line): <span class="lcd">AxCR09</span>
+<ul>
+<li><span class="lcd">A</span> - Stack level (A-Z, ! stack floated)</li>
+<li><span class="lcd">x</span> - HEX view</li>
+<li><span class="lcd">C</span> - Complex number</li>
+<li><span class="lcd">R</span> - Complex number input mode (Rectangular or Polar)</li>
+<li><span class="lcd">0</span> - HYP-flag (h), menu level or complex view (real, imaginary, absolute, °angle)</li>
+<li><span class="lcd">9</span> - Battery level (9...>=3V, 0...&lt;=2.5V). Note: At level 0 you get serious problems accessing the USB disk.</li>
+</ul>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+<br><h2 id="Dictionary">Dictionary</h2>
+The most important part of a FORTH system is the dictionary where all commands (words) and user program names are listed in an alphabetical order. You can call the dictionary with the command <span class="lcd">DICT</span>, the button <span class="button">CATALOG</span> or simply by pressing the keys <span class="button">^</span> or <span class="button">v</span>. To select the demanded command press the appropriate F-key.<br>
+<br>
+Please note that you can assign every command or user program to the top F-keys to execute it with one (with <span class="button">SHIFT</span> at least two) keypress(es).<br>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+<br><h2 id="RS">The Really Super Key</h2>
+Because of the good position on the keyboard the <span class="button">R/S</span> key ('Really Super Key') is used multifunctional.<br>
+<br>
+Per default it works as DUP or <span class="button">ENTER</span> key to optimize fast 'number crunching'.<br>
+<br>
+But if TOS is a complex number (note the <span class="lcd">C</span> annunciator) the <span class="button">R/S</span> key enters (and leaves) the complex view mode (see chapter <a href="#Complex">Complex Numbers</a>).<br>
+<br>
+In any menu (ie dictionary) the <span class="button">R/S</span> key works like <span class="lcd">DROP</span> or <span class="button">&lt;=</span> to exit the menu.<br>
+<br>
+If an user program interrupts (<span class="lcd">HOLD</span>) (for intermediate calculations) the <span class="button">R/S</span> key continues the execution of the user program.<br>
+<br>
+Last, but not least - if you prepare a screenshot (with <span class="button">SHIFT</span> and <span class="button">DISP</span> simultaneously) - the next pressed <span class="button">R/S</span> key makes a screenshot.<br>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+<br><h2 id="Browsing">Browsing Menus</h2>
+Menus (dictionary, constants, selecting ascii character) use the 18 function keys to choose the appropriate selection. For navigation use special keys:<br>
+<br>
+<table><tbody>
+<tr><td><span class="button">^</span></td><td>prev</td>
+<tr><td><span class="button">v</span></td><td>next</td>
+<tr><td><span class="button">7</span></td><td>2 x prev</td>
+<tr><td><span class="button">4</span></td><td>2 x next</td>
+<tr><td><span class="button">8</span></td><td>home</td>
+<tr><td><span class="button">5</span></td><td>end</td>
+<tr><td><span class="button">1</span></td><td>2 x prev</td>
+<tr><td><span class="button">2</span></td><td>2 x next</td>
+<tr><td><span class="button">0</span></td><td>prev</td>
+<tr><td><span class="button">.</span></td><td>next</td>
+<tr><td><span class="button">&lt;=</span></td><td>exit menu</td>
+<tr><td><span class="button">R/S</span></td><td>exit menu</td>
+</tbody></table><br>
+Every other key exits the menu.
+<br>
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+<br><h2 id="Complex">Complex Numbers</h2>
+IV42 calculates always with complex numbers (in rectangular form).<br>
+<br>
+The desired complex number input mode (Rectangular or Polar) can be selected with <span class="lcd">Cmod</span> or <span class="button">MODES</span> - have also a look to the R or P annunciator.<br>
+<br>
+If a complex number is on the TOS the <span class="lcd">C</span> annunciator will be shown.<br>
+<br>
+To enter a complex number enter the real part (<span class="lcd">R</span> mode) respectively absolute value (<span class="lcd">P</span> mode) and the imaginary part (<span class="lcd">R</span> mode) respectively angle (<span class="lcd">P</span> mode) to the stack and press <span class="lcd">CPLX</span> or <span class="button">COMPLEX</span>. This works vice versa.<br>
+<br>
+Please note that only the real part (<span class="lcd">R</span> mode) or absolute value (<span class="lcd">P</span> mode) will be shown on the display.<br>
+<br>
+To view all parts of a complex number switch with <span class="lcd">R/S</span> or <span class="button">R/S</span> to the complex number viewing mode. Another annunciator (<span class="lcd">r</span>eal, <span class="lcd">i</span>maginary, <span class="lcd">a</span>bsolute, <span class="lcd">°</span>angle) appears. In this menu the following keys have special functions:<br>
+<br>
+<table><tbody>
+<tr><td><span class="button"> ENTER</span></td><td>push value to stack and exit mode</td>
+<tr><td><span class="button"> ^</span></td><td>prev part</td>
+<tr><td><span class="button"> v</span></td><td>next part</td>
+<tr><td><span class="button"> 7</span></td><td>real part</td>
+<tr><td><span class="button"> 8</span></td><td>imaginary part</td>
+<tr><td><span class="button"> 4</span></td><td>absolute part</td>
+<tr><td><span class="button"> 5</span></td><td>angle part</td>
+<tr><td><span class="button"> 0</span></td><td>prev part</td>
+<tr><td><span class="button"> .</span></td><td>next</td>
+<tr><td><span class="button"> +/-</span></td><td>negate</td>
+<tr><td><span class="button"> &lt;=</span></td><td>exit mode</td>
+<tr><td><span class="button"> R/S</span></td><td>exit mode</td>
+</tbody></table><br>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+<br><h2 id="Programming">Programming</h2>
+IV42 offers 18 slots to manage user programs. You can save every user program to USB disk or load a program from USB disk to a slot.<br>
+<br>
+To select a program slot press Psel or <span class="button">GTO</span> and choose a slot. The following operations can be done with a selected program:<br>
+<br>
+<ul>
+<li><span class="lcd">Pdel</span> - Delete the selected program</li>
+<li><span class="lcd">Pedt</span> <span class="button">PRGM</span> - Edit the selected program (see below)</li>
+<li><span class="lcd">Pfcn</span> <span class="button">PGM.FCN</span> - Top f key menu for programs (see below)</li>
+<li><span class="lcd">Plod</span> <span class="button">SST</span> - Load a program from USB disk to the selected slot</li>
+<li><span class="lcd">Pren</span> - Rename the selected program (must be exactly 4 characters)</li>
+<li><span class="lcd">Psav</span> <span class="button">BST</span> - Save the selected program to USB disk</li>
+</ul>
+<br>
+With Pfcn or <span class="button">PGM.FCN</span> you can open a special top f-key menu for editing (<span class="lcd">EDIT</span>), renaming (<span class="lcd">REN</span>) deleting (<span class="lcd">DEL</span>), loading (<span class="lcd">LOAD</span>) or saving (<span class="lcd">SAVE</span>) a program.<br>
+<br>
+The program editor lists up to 6 steps of the user program. In addition it shows the line number, the name and size of the program. Also the current position (cursor) and the 'byte-position' are apparent. On the bottom of the screen special top f-keys are offered to insert a command from the dictionary (<span class="lcd">INS</span>), to move the cursor fast (<span class="lcd">PG^</span>, <span class="lcd">PGv</span>, <span class="lcd">HOME</span>, <span class="lcd">END</span>) and to delete a step (<span class="lcd">DEL</span>).<br>
+<br>
+Of course you can use the cursor keys (<span class="button">^</span> or <span class="button">v</span>) to move the cursor up or down.<br>
+<br>
+Please note that there is a fast way to insert numbers and some commands by pressing the appropriate key or shifted key directly.<br>
+<br>
+Drop <span class="button">&lt;=</span> or <span class="lcd">R/S</span> <span class="button">R/S</span> exits the editor.<br>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+<br><h2 id="Calculus">Calculus</h2>
+To examine a mathematical function y=f(x) write a program to calculate this function (see chapter <a href="#Programming">Programming</a>).<br>
+<br>
+If this program is selected (<span class="lce">Psel</span> or <span class="button">GTO</span>) you can calculate a function value (execute the program name or <span class="button">XEQ</span>), find a root (<span class="lcd">Fslv</span> or<span class="button">SOLVER</span>), integrate (<span class="lcd">Fint</span> or <span class="button">INTEGRAL</span>), calculate the slope (<span class="lcd">Fslp</span>) or plot the function (<span class="lcd">Fplt</span> or <span class="button">PRINT</span>).<br>
+<br>
+Please note that you have to prepare initial values to the stack first (a x-value for calculating a function value, a start value for solving, a lower and upper limit for integrating, an x-value for calculating the slope or a lower and upper limit for plotting).<br>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+<br><h2 id="Plotting">Plotting</h2>
+When plotting a function (see chapter <a href="#Calculus">Calculus</a>) the following keys have special
+functions:<br>
+<br>
+<ul>
+<li><span class="button">^</span> - Zoom in</li>
+<li><span class="button">v</span> - Zoom out</li>
+<li><span class="button">0</span> - Shift x-limits left</li>
+<li><span class="button">.</span> - Shift x-limits right</li>
+</ul>
+Every other key exits plotting.<br>
+<br>
+Please note that leaving a function plot pushes the current values of the lower/upper x-limit and minimum/maximum function value (y) to the stack.<br>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+<br><h2 id="Matrices">Matrices</h2>
+IV42 can handle 3x3 matrices (+, -, *, /, det, transpose, invert, load elements from the stack, save elements to the stack).<br>
+<br>
+Open the matrix menu with <span class="lcd">MAT</span> od <span class="button">MATRIX</span>. In the status line you see the name of the main matrix A or the supporting matrix B (switch with <span class="button">SHIFT</span>), the number of the row and column and the ASSIGN- or VIEW-mode (switch with <span class="button">E</span>).<br>
+<br>
+The top f-keys did change to supporting matrix functions:<br>
+<br>
+<ul>
+<li><span class="lcd">DET</span> - Push the determinant of A to the stack</li>
+<li><span class="lcd">TRANS</span> - Transpose the selected (A or B) matrix</li>
+<li><span class="lcd">COPY</span> - Copy the selected matrix (A or B) to the other (B or A)</li>
+<li><span class="lcd">LOAD</span> - Pop 9 values from the stack to the matrix (TOS => 3|3)</li>
+<li><span class="lcd">SAVE</span> - Push all 9 matrix values to the stack (3|3 => TOS)</li>
+<li><span class="lcd">MCLR</span> - Clears matrix A and B</li>
+</ul>
+<br>
+In addition the following keys are available:<br>
+<br>
+<ul>
+<li><span class="button">SHIFT</span> - Toggle matrix A and B</li>
+<li><span class="button">E</span> - Toggle ASSIGN and VIEW mode</li>
+<li><span class="button">^</span><span class="button">v</span> - Up/down one row</li>
+<li><span class="button">0</span><span class="button">.</span> - Left/right one col</li>
+<li><span class="button">/</span> - Invert matrix A</li>
+<li><span class="button">*</span> - A*B</li>
+<li><span class="button">-</span> - A-B</li>
+<li><span class="button">+</span> - A+B</li>
+<li><span class="button">x>&lt;y</span> - Swap matrix A and B</li>
+<li><span class="button">ENTER</span> - Pushes viewed (VIEW mode) matrix element to stack</li>
+<li><span class="button">&lt;=</span> <span class="button">R/S</span> - Exit matrix mode</li>
+</ul>
+<br>
+PLease note that the matrix elements can be acessed by the cursor keys up or down (<span class="button">^</span> or <span class="button">v</span>), left or right (<span class="button">0</span> or <span class="button">.</span>) respectively the corresponding number keys 1-9 in a direct way.<br>
+<br>
+For example to assign a number to A(1|3) enter the number, open the matrix menu (<span class="button">MATRIX</span>), select matrix A (<span class="button">SHIFT</span>) and ASSIGN (<span class="button">E</span>) and push <span class="button">9</span> (row 1, column 3). To view the matrix element A(1|3) select matrix A (<span class="button">SHIFT</span>) and VIEW (<span class="button">E</span>) and push <span class="button">9</span>.<br>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+<br><h2 id="Conversions">Conversions</h2>
+IV42 is able to convert common units (see commands starting with '<span class="lcd">></span>').<br>
+<br>
+But there is also a comfortable menu to choose the desired conversion:
+Enter the number to convert to the TOS and press <span class="button">CONVERT</span> (or execute <span class="lcd">CONV</span>) and
+select one of the following 18 function keys (convert to ...):<br>
+<br>
+<table><tbody>
+<tr> &nbsp; <td>km </td><td>mi </td><td>m</td><td>ft &nbsp;</td><td>cm</td><td>in</td></tr>
+<tr> &nbsp; <td>kg </td><td>lbs</td><td>l</td><td>gal</td><td>°F</td><td>°C</td></tr>
+<tr> &nbsp; <td>deg</td><td>rad</td><td>h</td><td>hms</td><td>kW</td><td>HP</td></tr>
+</tbody></table><br>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+<br><h2 id="Commands">Commands and Keys</h2>
+Please note the abbreviations TOS (Top Of Stack) and TOS-1 (next element on the stack), TOS-2, ...<br>
+<br>
+<ul>
+<li>CMD, KEY and EXPLANATION</li><br>
+<li><span class="button">EXIT</span> - Exclusive ON/OFF key</li>
+<li><span class="button">SHIFT</span> - Shift key or toggle matrix A&lt;=>B (see chapter <a href="#Matrices">Matrices</a>)</li>
+<li><span class="lcd">0-9.</span> - Digits and decimal point</li>
+<li><span class="lcd">+-*/</span> - Basic operations</li>
+<li><span class="lcd">%</span> <span class="button">%</span> - Percent (TOS / TOS-1 * 100%)</li>
+<li><span class="lcd">%C</span> - Percent change ((TOS - TOS-1) / TOS-1 *100%)</li>
+<li><span class="lcd">&lt;>?</span> <span class="lcd">&lt;?</span> <span class="lcd">=?</span> <span class="lcd">>?</span>   ... Conditions (not equal, less then, equal, greater then)</li>
+<li><span class="lcd">>KM</span> <span class="lcd">>MI</span> - Convert Kilometer an Miles</li>
+<li><span class="lcd">>M</span> <span class="lcd">>FT</span> - Convert Meter and Feet</li>
+<li><span class="lcd">>CM</span> <span class="lcd">>IN</span> - Convert Centimeter and Inches</li>
+<li><span class="lcd">>KG</span> <span class="lcd">>LBS</span> - Convert Kilogram and Pounds</li>
+<li><span class="lcd">>L</span> <span class="lcd">>GAL</span> - Convert Liter and Gallons</li>
+<li><span class="lcd">>C</span> <span class="lcd">>F</span> - Convert Celsius and Fahrenheit</li>
+<li><span class="lcd">>DEG</span> <span class="lcd">>RAD</span> - Convert Degrees and Radians</li>
+<li><span class="lcd">>H</span> <span class="lcd">>HMS</span> - Convert Hours and Hours.MinutesSeconds</li>
+<li><span class="lcd">>KW</span> <span class="lcd">>HP</span> - Convert Kilowatt and Horsepowers</li>
+<li><span class="lcd">ABS</span> - Absolute value of TOS</li>
+<li><span class="lcd">ACOS</span> <span class="button">ACOS</span> - Arcus cosine (inverse)</li>
+<li><span class="lcd">AND</span> - Logical AND</li>
+<li><span class="lcd">ASGN</span> <span class="button">ASSIGN</span> - Assign command to top F-Key (TOS, 1-12)</li>
+<li><span class="lcd">ASIN</span> <span class="button">ASIN</span> - Arcus sine (inverse)</li>
+<li><span class="lcd">ATAN</span> <span class="button">ATAN</span> - Arcus tangent (inverse)</li>
+<li><span class="lcd">BEG</span> - Begin a BEGIN-UNTIL-loop</li>
+<li><span class="lcd">CHS</span> <span class="button">+/-</span> - Change sign (negate)</li>
+<li><span class="lcd">CLK</span> - Runs clock (see TIME) until break (R/S or DROP)</li>
+<li><span class="lcd">CLR</span> <span class="button">CLEAR</span> - Clear stack</li>
+<li><span class="lcd">CONS</span> <span class="button">FLAGS</span> - Physical constants (CODATA)</li>
+<li><span class="lcd">CONV</span> <span class="button">CONVERT</span> - Unit conversions</li>
+<li><span class="lcd">COS</span> <span class="button">COS</span> - Cosine (of angle in degrees)</li>
+<li><span class="lcd">CPLX</span> <span class="button">COMPLEX</span> - Enter/deenter complex number (TOS-1, TOS)(see Cmod, R/S)</li>
+<li><span class="lcd">Cmod</span> <span class="button">MODES</span> - Toggle complex number input mode (Rectangular or Polar)</li>
+<li><span class="lcd">DICT</span> <span class="button">CATALOG</span> - Dictionary</li>
+<li><span class="lcd">DISP</span> <span class="button">DISP</span> - Change display color or screenshot (hold SHIFT)</li>
+<li><span class="lcd">DN</span> <span class="button">v</span> - Down (menu navigation)</li>
+<li><span class="lcd">DROP</span> <span class="button">&lt;=</span> - Drop TOS</li>
+<li><span class="lcd">DUP</span> <span class="button">ENTER</span> - Enter number input or duplicate TOS</li>
+<li><span class="lcd">E</span> <span class="button">E</span> - Scientific notation</li>
+<li><span class="lcd">ELSE</span> - Execute following code if IF failed</li>
+<li><span class="lcd">EXP</span> <span class="button">e^x</span> - Exponential value</li>
+<li><span class="lcd">F1</span>-<span class="lcd">F12</span> - Top F-keys (2x6)</li>
+<li><span class="lcd">FRAC</span> - Fractional value of TOS</li>
+<li><span class="lcd">Fint</span> <span class="button">INTGRATE</span> - Integrate selected user program (from TOS-1 to TOS)</li>
+<li><span class="lcd">Fplt</span> <span class="button">PRINT</span> - Plot selected user program (from TOS-1 to TOS)</li>
+<li><span class="lcd">Fslp</span> - Slope of selected user program at TOS</li>
+<li><span class="lcd">Fslv</span> <span class="button">SOLVE</span> - Solve selected user program (close to start value TOS)</li>
+<li><span class="lcd">HELP</span> <span class="button">CUSTOM</span> - Browse html file /IV42/index.htm</li>
+<li><span class="lcd">HEX</span> - Toggle HEX DEC view</li>
+<li><span class="lcd">HOLD</span> - Interrupt program execution (R/S key continues)</li>
+<li><span class="lcd">HYP</span> - Switch trigonometic to hyperbolic functions (and vice versa)</li>
+<li><span class="lcd">IF</span> - Execute following code if true</li>
+<li><span class="lcd">INT</span> - Integer value of TOS</li>
+<li><span class="lcd">INV</span> <span class="button">1/x</span> - Inverse</li>
+<li><span class="lcd">KEY?</span> - Interrupt program execution until keypress</li>
+<li><span class="lcd">LN</span> <span class="button">LN</span> - Natural logarithm</li>
+<li><span class="lcd">LN!</span> - Natural logarithm of gamma of TOS</li>
+<li><span class="lcd">LOG</span> <span class="button">LOG</span> - 10 based logarithm</li>
+<li><span class="lcd">L.R.</span> - Linear regression (line best fit: y = TOS * x + TOS-1)</li>
+<li><span class="lcd">LSTx</span> <span class="button">LASTx</span> - Pushe last popped number to stack</li>
+<li><span class="lcd">MAT</span> <span class="button">MATRIX</span> - Matrix menu</li>
+<li><span class="lcd">MOD</span> - Modulo</li>
+<li><span class="lcd">NAND</span> - Logical NAND</li>
+<li><span class="lcd">ND</span> - Normal Distribution (PDF and CDF)</li>
+<li><span class="lcd">NOT</span> - Logical NOT</li>
+<li><span class="lcd">OR</span> - Logical OR</li>
+<li><span class="lcd">OVER</span> - Copy TOS-1 to TOP</li>
+<li><span class="lcd">P/C</span> <span class="button">PROB</span> - Permutations (nPr, TOS-1) and Combinations (nCr, TOS)</li>
+<li><span class="lcd">PAUS</span> - Pause program execution for TOS * 250 ms and print screen</li>
+<li><span class="lcd">PI</span> <span class="button">PI</span> - PI</li>
+<li><span class="lcd">PICK</span> - Copy TOS-th stack element to stack</li>
+<li><span class="lcd">POL?</span> - Check if complex mode is polar (1) or rectangular (0)</li>
+<li><span class="lcd">PVAL</span> - Present value of given interest rate and periods</li>
+<li><span class="lcd">PW10</span> <span class="button">10^x</span> - 10 raised to the power or TOS</li>
+<li><span class="lcd">PWR</span> <span class="button">y^x</span> - TOS-1 raised to the power of TOS</li>
+<li><span class="lcd">Pdel</span> - Delete selected user program</li>
+<li><span class="lcd">Pedt</span> <span class="button">PRGM</span> - Edit selected user program</li>
+<li><span class="lcd">Plod</span> <span class="button">SST</span> - Load user program from USB disk to selected program slot</li>
+<li><span class="lcd">Pfcn</span> <span class="button">PGM.FCN</span> - Fade in top F-keys for treating selected programs (EDIT, REN, DEL, LOAD, SAVE)</li>
+<li><span class="lcd">Pren</span> - Rename selected user program (4 characters exactly)</li>
+<li><span class="lcd">Psav</span> <span class="button">BST</span> - Save selected user program to USB disk</li>
+<li><span class="lcd">Psel</span> <span class="button">GTO</span> - Select user program for further treatment</li>
+<li><span class="lcd">QEQN</span> - Quadratic equation (xx + TOS-1 * x + TOS = 0)</li>
+<li><span class="lcd">R/S</span> <span class="button">R/S</span> - 'Really Super Key'</li>
+<li><span class="lcd">RE?</span> - Check if TOS is real (1) or complex (0)</li>
+<li><span class="lcd">RCL</span> <span class="button">RCL</span> - Recall value from register TOS to stack</li>
+<li><span class="lcd">ROT</span> <span class="button">Rv</span> - Rotate/move TOS-2 to TOS</li>
+<li><span class="lcd">SHFT</span> <span class="button">SHIFT</span> - Shift key or swap matrices A and B</li>
+<li><span class="lcd">SHOW</span> <span class="button">SHOW</span> - Show TOS in status line</li>
+<li><span class="lcd">SIN</span> <span class="button">SIN</span> - Sine (of angle in degrees)</li>
+<li><span class="lcd">SQR</span> <span class="button">x^2</span> - Square</li>
+<li><span class="lcd">SQRT</span> <span class="button">SQRT</span> - Square root</li>
+<li><span class="lcd">STAT</span> <span class="button">STAT</span> - Statistics: Mean value (TOS) and standard deviation (TOS-1)</li>
+<li><span class="lcd">STKS</span> - Sum of all stack elements</li>
+<li><span class="lcd">STO</span>  <span class="button">STO</span> - Store TOS-1 to register TOS (0-9)</li>
+<li><span class="lcd">SUM+</span> <span class="button">SUM+</span> - Enter X- or YX-data (STAT, LR) (uses registers 5-9: 5XX, 6XY, 7n, 8X, 9Y)</li>
+<li><span class="lcd">SUM-</span> <span class="button">SUM-</span> - Remove X- or YX-data (STAT, LR)</li>
+<li><span class="lcd">SUMc</span> - Clear statistic registers (register 5-9)</li>
+<li><span class="lcd">SWAP</span> <span class="button">x>&lt;y</span> - Swap TOS and TOS-1</li>
+<li><span class="lcd">TAN</span>  <span class="button">TAN</span> - Tangent (of angle in degrees)</li>
+<li><span class="lcd">THEN</span> - Terminate IF/ELSE condition</li>
+<li><span class="lcd">TIME</span> - Push time of RTC to stack (24h format)</li>
+<li><span class="lcd">Tclr</span> - Clear alpha stack (see Tput)</li>
+<li><span class="lcd">Tput</span> <span class="button">ALPHA</span> - Push ascii character (TOS) to alpha stack (status line)</li>
+<li><span class="lcd">UNTL</span> - Continue executing a BEGIN-UNTIL-loop until TOS is true</li>
+<li><span class="lcd">UP</span> <span class="button">^</span> - Up (menu navigation)</li>
+<li><span class="lcd">XEQ</span> <span class="button">XEQ</span> - Execute selected user program</li>
+</ul>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+<br><h2 id="Constants">Physical Constants</h2>
+
+To enter the constants menu press <span class="button">FLAGS</span> (or <span class="lcd">CONS</span>).
+<br><br>
+
+<table><tbody>
+<tr><td>c &nbsp; </td><td>Speed of light</td></tr>
+<tr><td>g &nbsp; </td><td>Acceleration of gravity</td></tr>
+<tr><td>G &nbsp; </td><td>Newton constant of gravity</td></tr>
+<tr><td>Vm &nbsp; </td><td>Molar volume of ideal gas</td></tr>
+<tr><td>NA &nbsp; </td><td>Avogadro constant</td></tr>
+<tr><td>Rinf</td><td>Rydberg constant</td></tr>
+<tr><td>e &nbsp; </td><td>Elementary charge</td></tr>
+<tr><td>me &nbsp; </td><td>Electron mass</td></tr>
+<tr><td>mp &nbsp; </td><td>Proton mass</td></tr>
+<tr><td>mn &nbsp; </td><td>Neutron mass</td></tr>
+<tr><td>mmu </td><td>Muon mass</td></tr>
+<tr><td>k &nbsp; </td><td>Boltzmann constant</td></tr>
+<tr><td>h &nbsp; </td><td>Planck constant</td></tr>
+<tr><td>Phi0 </td><td>Magnetic flux quantum</td></tr>
+<tr><td>a0 &nbsp; </td><td>Bohr radius</td></tr>
+<tr><td>eps0 </td><td>Vacuum electric permittivity</td></tr>
+<tr><td>R &nbsp; </td><td>Molar gas constant</td></tr>
+<tr><td>F &nbsp; </td><td>Faraday constant</td></tr>
+<tr><td>mU &nbsp; </td><td>Atomic mass constant</td></tr>
+<tr><td>mu0 </td><td>Vacuum magnetic permeability</td></tr>
+<tr><td>muB </td><td>Bohr magneton</td></tr>
+<tr><td>muN </td><td>Nuclear magneton</td></tr>
+<tr><td>mup </td><td>Proton magnetic moment</td></tr>
+<tr><td>mue </td><td>Electron magnetic moment</td></tr>
+<tr><td>mun </td><td>Neutron magnetic moment</td></tr>
+<tr><td>mumu</td><td>Muon magnetic moment</td></tr>
+<tr><td>re &nbsp; </td><td>Electron radius</td></tr>
+<tr><td>Z0 &nbsp; </td><td>Impedance of vacuum</td></tr>
+<tr><td>alph </td><td>Fine structure constant</td></tr>
+<tr><td>sigm </td><td>Stefan-Boltzmann constant</td></tr>
+<tr><td>t &nbsp; </td><td>Celsius temperature</td></tr>
+<tr><td>atm  </td><td>Standard atmosphere</td></tr>
+<tr><td>gamp </td><td>Proton gyromagnetic ratio</td></tr>
+<tr><td>C1 &nbsp; </td><td>First radiation constant</td></tr>
+<tr><td>C2 &nbsp; </td><td>Second radiation constant</td></tr>
+<tr><td>G0 &nbsp; </td><td>Conductance quantum</td></tr>
+</tbody></table><br>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+<br><h2 id="ASCII">ASCII Table</h2>
+
+<table><tbody>
+<tr><td>DEC</td><td>CHAR</td></tr>
+<tr><td>32 </td><td> </td></tr>
+<tr><td>33 </td><td>!</td></tr>
+<tr><td>34 </td><td>"</td></tr>
+<tr><td>35 </td><td>#</td></tr>
+<tr><td>36 </td><td>$</td></tr>
+<tr><td>37 </td><td>%</td></tr>
+<tr><td>38 </td><td>&</td></tr>
+<tr><td>39 </td><td>'</td></tr>
+<tr><td>40 </td><td>(</td></tr>
+<tr><td>41 </td><td>)</td></tr>
+<tr><td>42 </td><td>*</td></tr>
+<tr><td>43 </td><td>+</td></tr>
+<tr><td>44 </td><td>,</td></tr>
+<tr><td>45 </td><td>-</td></tr>
+<tr><td>46 </td><td>.</td></tr>
+<tr><td>47 </td><td>/</td></tr>
+<tr><td>48 </td><td>0</td></tr>
+<tr><td>49 </td><td>1</td></tr>
+<tr><td>50 </td><td>2</td></tr>
+<tr><td>51 </td><td>3</td></tr>
+<tr><td>52 </td><td>4</td></tr>
+<tr><td>53 </td><td>5</td></tr>
+<tr><td>54 </td><td>6</td></tr>
+<tr><td>55 </td><td>7</td></tr>
+<tr><td>56 </td><td>8</td></tr>
+<tr><td>57 </td><td>9</td></tr>
+<tr><td>58 </td><td>:</td></tr>
+<tr><td>59 </td><td>;</tr>
+<tr><td>60 </td><td>&lt;</tr>
+<tr><td>61 </td><td>=</tr>
+<tr><td>62 </td><td>&gt;</tr>
+<tr><td>63 </td><td>?</tr>
+<tr><td>64 </td><td>@</td></tr>
+<tr><td>65 </td><td>A</td></tr>
+<tr><td>66 </td><td>B</td></tr>
+<tr><td>67 </td><td>C</td></tr>
+<tr><td>68 </td><td>D</td></tr>
+<tr><td>69 </td><td>E</td></tr>
+<tr><td>70 </td><td>F</td></tr>
+<tr><td>71 </td><td>G</td></tr>
+<tr><td>72 </td><td>H</td></tr>
+<tr><td>73 </td><td>I</td></tr>
+<tr><td>74 </td><td>J</td></tr>
+<tr><td>75 </td><td>K</td></tr>
+<tr><td>76 </td><td>L</td></tr>
+<tr><td>77 </td><td>M</td></tr>
+<tr><td>78 </td><td>N</td></tr>
+<tr><td>79 </td><td>O</td></tr>
+<tr><td>80 </td><td>P</td></tr>
+<tr><td>81 </td><td>Q</td></tr>
+<tr><td>82 </td><td>R</td></tr>
+<tr><td>83 </td><td>S</td></tr>
+<tr><td>84 </td><td>T</td></tr>
+<tr><td>85 </td><td>U</td></tr>
+<tr><td>86 </td><td>V</td></tr>
+<tr><td>87 </td><td>W</td></tr>
+<tr><td>88 </td><td>X</td></tr>
+<tr><td>89 </td><td>Y</td></tr>
+<tr><td>90 </td><td>Z</td></tr>
+<tr><td>91 </td><td>&#9650;</td></tr>
+<tr><td>92 </td><td>\</td></tr>
+<tr><td>93 </td><td>&#9660;</td></tr>
+<tr><td>94 </td><td>^</td></tr>
+<tr><td>95 </td><td>_</td></tr>
+<tr><td>96 </td><td>°</td></tr>
+<tr><td>97 </td><td>a</td></tr>
+<tr><td>98 </td><td>b</td></tr>
+<tr><td>99 </td><td>c</td></tr>
+<tr><td>100</td><td>d</td></tr>
+<tr><td>101</td><td>e</td></tr>
+<tr><td>102</td><td>f</td></tr>
+<tr><td>103</td><td>g</td></tr>
+<tr><td>104</td><td>h</td></tr>
+<tr><td>105</td><td>i</td></tr>
+<tr><td>106</td><td>j</td></tr>
+<tr><td>107</td><td>k</td></tr>
+<tr><td>108</td><td>l</td></tr>
+<tr><td>109</td><td>m</td></tr>
+<tr><td>110</td><td>n</td></tr>
+<tr><td>111</td><td>o</td></tr>
+<tr><td>112</td><td>p</td></tr>
+<tr><td>113</td><td>q</td></tr>
+<tr><td>114</td><td>r</td></tr>
+<tr><td>115</td><td>s</td></tr>
+<tr><td>116</td><td>t</td></tr>
+<tr><td>117</td><td>u</td></tr>
+<tr><td>118</td><td>v</td></tr>
+<tr><td>119</td><td>w</td></tr>
+<tr><td>120</td><td>x</td></tr>
+<tr><td>121</td><td>y</td></tr>
+<tr><td>122</td><td>z</td></tr>
+<tr><td>123</td><td>←</td></tr>
+<tr><td>124</td><td>|</td></tr>
+<tr><td>125</td><td>→</td></tr>
+<tr><td>126</td><td>■</td></tr>
+</tbody></table><br>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+</body>
+</html>
