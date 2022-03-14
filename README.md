@@ -73,7 +73,8 @@ settings) - make a backup!
 Install IV42:
 
  * First load IV42-xxx.pgm and (for desired later back switch to DM42)
-   DM42-x.xx.pgm to the root directory of the USB disk.
+   DM42-x.xx.pgm (technical.swissmicros.com/dm42/firmware) to the root directory
+   of the USB disk.
  * In your DM42 calculator goto SETUP (SHIFT-0)
  * Enter menu point [5. System >]
  * Goto system menu with [2. Enter System Menu]
