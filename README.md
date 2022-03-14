@@ -12,7 +12,7 @@ See a short video of IV42 at:  https://youtu.be/sDT_JJClNMI
 ![4](https://user-images.githubusercontent.com/16148023/158132139-1ebe2183-4ff2-4e3b-a33e-0c5739d8c875.png)
 ![5](https://user-images.githubusercontent.com/16148023/158132136-2be23e5f-8044-4a0e-b6c5-b25b148bf02c.png)
 ![6](https://user-images.githubusercontent.com/16148023/158132134-2f4209a0-322f-4ce2-a4bb-a8fa1bc2a317.png)
-![7](https://user-images.githubusercontent.com/16148023/158132128-d31f054b-5cc4-4e76-9d07-56d55275a775.png)
+
 
 
 ```
