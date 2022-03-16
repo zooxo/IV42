@@ -1,7 +1,5 @@
 # IV42 - A Powerful Programable RPN Calculator for the DM42 Hardware based on FORTH
 
-<h1>... coming soon</h1>
-
 
 See a short video of IV42 at:  https://youtu.be/sDT_JJClNMI
 
