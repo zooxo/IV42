@@ -75,7 +75,9 @@ Please note that you will loose all user data of your DM42 (ie. user programs or
 
 
 <br><h2 id="Help">Help</h2>
-To view the HTML help file (iv42help.htm) execute the command <span class="lcd">HELP</span> or press the button <span class="button">CUSTOM</span>. Please note that the file iv42help.htm has to be on the USB disk in the folder IV42.<br>
+To view the HTML help file (iv42help.htm) execute the command <span class="lcd">HELP</span> or press the button <span class="button">CUSTOM</span>.<br>
+To view a help image (iv42help.bmp) execute the command <span class="lcd">IMG</span> or press the button <span class="button">v</span>.<br>
+Please note that both files have to be on the USB disk in the folder IV42.<br>
 
 <br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
 
@@ -126,7 +128,7 @@ Annunciators (6 most right characters of status line): <span class="lcd">AxCR09<
 
 
 <br><h2 id="Dictionary">Dictionary</h2>
-The most important part of a FORTH system is the dictionary where all commands (words) and user program names are listed in an alphabetical order. You can call the dictionary with the command <span class="lcd">DICT</span>, the button <span class="button">CATALOG</span> or simply by pressing the keys <span class="button">^</span> or <span class="button">v</span>. To select the demanded command press the appropriate F-key.<br>
+The most important part of a FORTH system is the dictionary where all commands (words) and user program names are listed in an alphabetical order. You can call the dictionary with the command <span class="lcd">DICT</span>, the button <span class="button">CATALOG</span> or simply by pressing the key <span class="button">^</span>. To select the demanded command press the appropriate F-key.<br>
 <br>
 Please note that you can assign every command or user program to the top F-keys to execute it with one (with <span class="button">SHIFT</span> at least two) keypress(es).<br>
 
@@ -194,7 +196,6 @@ To view all parts of a complex number switch with <span class="lcd">R/S</span> o
 <tr><td><span class="button"> 5</span></td><td>angle part</td>
 <tr><td><span class="button"> 0</span></td><td>prev part</td>
 <tr><td><span class="button"> .</span></td><td>next</td>
-<tr><td><span class="button"> +/-</span></td><td>negate</td>
 <tr><td><span class="button"> &lt;=</span></td><td>exit mode</td>
 <tr><td><span class="button"> R/S</span></td><td>exit mode</td>
 </tbody></table><br>
@@ -224,7 +225,7 @@ Of course you can use the cursor keys (<span class="button">^</span> or <span cl
 <br>
 Please note that there is a fast way to insert numbers and some commands by pressing the appropriate key or shifted key directly.<br>
 <br>
-Drop <span class="button">&lt;=</span> or <span class="lcd">R/S</span> <span class="button">R/S</span> exits the editor.<br>
+<span class="lcd">Drop</span> <span class="button">&lt;=</span> or <span class="lcd">R/S</span> <span class="button">R/S</span> exits the editor.<br>
 
 <br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
 
@@ -277,8 +278,8 @@ In addition the following keys are available:<br>
 <ul>
 <li><span class="button">SHIFT</span> - Toggle matrix A and B</li>
 <li><span class="button">E</span> - Toggle ASSIGN and VIEW mode</li>
-<li><span class="button">^</span><span class="button">v</span> - Up/down one row</li>
-<li><span class="button">0</span><span class="button">.</span> - Left/right one col</li>
+<li><span class="button">^</span> <span class="button">v</span> - Up/down one row</li>
+<li><span class="button">0</span> <span class="button">.</span> - Left/right one col</li>
 <li><span class="button">/</span> - Invert matrix A</li>
 <li><span class="button">*</span> - A*B</li>
 <li><span class="button">-</span> - A-B</li>
@@ -340,7 +341,7 @@ Please note the abbreviations TOS (Top Of Stack) and TOS-1 (next element on the 
 <li><span class="lcd">ATAN</span> <span class="button">ATAN</span> - Arcus tangent (inverse)</li>
 <li><span class="lcd">BEG</span> - Begin a BEGIN-UNTIL-loop</li>
 <li><span class="lcd">CHS</span> <span class="button">+/-</span> - Change sign (negate)</li>
-<li><span class="lcd">CLK</span> - Runs clock (see TIME) until break (R/S or DROP)</li>
+<li><span class="lcd">CLK</span> - Runs <span class="lcd">TIME</span> until break (<span class="button">R/S</span> or <span class="button">&lt;=</span>)</li>
 <li><span class="lcd">CLR</span> <span class="button">CLEAR</span> - Clear stack</li>
 <li><span class="lcd">CONS</span> <span class="button">FLAGS</span> - Physical constants (CODATA)</li>
 <li><span class="lcd">CONV</span> <span class="button">CONVERT</span> - Unit conversions</li>
@@ -349,7 +350,6 @@ Please note the abbreviations TOS (Top Of Stack) and TOS-1 (next element on the 
 <li><span class="lcd">Cmod</span> <span class="button">MODES</span> - Toggle complex number input mode (Rectangular or Polar)</li>
 <li><span class="lcd">DICT</span> <span class="button">CATALOG</span> - Dictionary</li>
 <li><span class="lcd">DISP</span> <span class="button">DISP</span> - Change display color or screenshot (hold SHIFT)</li>
-<li><span class="lcd">DN</span> <span class="button">v</span> - Down (menu navigation)</li>
 <li><span class="lcd">DROP</span> <span class="button">&lt;=</span> - Drop TOS</li>
 <li><span class="lcd">DUP</span> <span class="button">ENTER</span> - Enter number input or duplicate TOS</li>
 <li><span class="lcd">E</span> <span class="button">E</span> - Scientific notation</li>
@@ -361,13 +361,14 @@ Please note the abbreviations TOS (Top Of Stack) and TOS-1 (next element on the 
 <li><span class="lcd">Fplt</span> <span class="button">PRINT</span> - Plot selected user program (from TOS-1 to TOS)</li>
 <li><span class="lcd">Fslp</span> - Slope of selected user program at TOS</li>
 <li><span class="lcd">Fslv</span> <span class="button">SOLVE</span> - Solve selected user program (close to start value TOS)</li>
-<li><span class="lcd">HELP</span> <span class="button">CUSTOM</span> - Browse html file /IV42/index.htm</li>
+<li><span class="lcd">HELP</span> <span class="button">CUSTOM</span> - Browse html file /IV42/iv42help.htm</li>
 <li><span class="lcd">HEX</span> - Toggle HEX DEC view</li>
 <li><span class="lcd">HOLD</span> - Interrupt program execution (R/S key continues)</li>
 <li><span class="lcd">HYP</span> - Switch trigonometic to hyperbolic functions (and vice versa)</li>
 <li><span class="lcd">IF</span> - Execute following code if true</li>
 <li><span class="lcd">INT</span> - Integer value of TOS</li>
 <li><span class="lcd">INV</span> <span class="button">1/x</span> - Inverse</li>
+<li><span class="lcd">IMG</span> <span class="button">v</span> - View help image /IV42/iv42help.bmp</li>
 <li><span class="lcd">KEY?</span> - Interrupt program execution until keypress</li>
 <li><span class="lcd">LN</span> <span class="button">LN</span> - Natural logarithm</li>
 <li><span class="lcd">LN!</span> - Natural logarithm of gamma of TOS</li>
@@ -419,7 +420,7 @@ Please note the abbreviations TOS (Top Of Stack) and TOS-1 (next element on the 
 <li><span class="lcd">Tclr</span> - Clear alpha stack (see Tput)</li>
 <li><span class="lcd">Tput</span> <span class="button">ALPHA</span> - Push ascii character (TOS) to alpha stack (status line)</li>
 <li><span class="lcd">UNTL</span> - Continue executing a BEGIN-UNTIL-loop until TOS is true</li>
-<li><span class="lcd">UP</span> <span class="button">^</span> - Up (menu navigation)</li>
+<li><span class="lcd">UP</span> <span class="button">^</span> - Up (menu navigation) and <span class="button">v</span> (down)</li>
 <li><span class="lcd">XEQ</span> <span class="button">XEQ</span> - Execute selected user program</li>
 </ul>
 
