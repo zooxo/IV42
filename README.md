@@ -82,7 +82,7 @@ settings) - make a backup!
 Install IV42:
 
  * First load IV42-xxx.pgm and (for desired later back switch to DM42)
-   DM42-x.xx.pgm (technical.swissmicros.com/dm42/firmware) to the root directory
+   DM42-x.xx.pgm (technical.swissmicros.com/dm42/firmware/) to the root directory
    of the USB disk.
  * In your DM42 calculator goto SETUP (SHIFT-0)
  * Enter menu point [5. System >]
@@ -113,8 +113,9 @@ ____________________
 ____________________
 
 To view the HTML help file (iv42help.htm) execute the command HELP or press the
-button [CUSTOM]. Please note that the file iv42help.htm has to be on the USB
-disk in the folder IV42.
+button [CUSTOM]. To view a help image (iv42help.bmp) execute the command IMG or
+press the button [v]. Please note that both files have to be on the USB disk in
+the folder IV42.
 
 
 ____________________
@@ -132,7 +133,7 @@ messages), titles or the alpha stack and on the right side system annunciators
 
 The TOS section shows the number on the top of the stack in big digits. Please
 note that you can view the TOS with all available digits (double format) in the
-status line by selecting SHOW [SHOW].
+status line by selecting SHOW or [SHOW].
 
 In the F-key section you can see the labels for all 18 (3 rows with 6 keys)
 function keys.
@@ -149,13 +150,13 @@ ____________________
  ERROR       Infinite operation
  FILE ERROR  File loading error
  HOLD        Program on hold
- LOADED      File loades message
+ LOADED      File loaded
  LOOP ERROR  Loop, nest or condition error
  NO PROGRAM  Desired program not loaded
  NO SPACE    No space to insert
  RUNNING     Running (solve, integrate, plot calculation)
- SAVED       File saved message
- STOPPED     Program stopped message
+ SAVED       File saved
+ STOPPED     Program stopped
 
 
 ____________________
@@ -182,8 +183,8 @@ ____________________
 The most important part of a FORTH system is the dictionary where all commands
 (words) and user program names are listed in an alphabetical order. You can
 call the dictionary with the command DICT, the button [CATALOG] or simply by
-pressing the keys [^] or [v]. To select the demanded command press the
-appropriate F-key.
+pressing the key [^]. To select the demanded command press the appropriate
+F-key.
 
 Please note that you can assign every command or user program to the top
 F-keys to execute it with one (with SHIFT at least two) keypress(es).
@@ -249,7 +250,7 @@ To view all parts of a complex number switch with R/S or [R/S] to the complex
 number viewing mode. Another annunciator (real, imaginary, absolute, °angle)
 appears. In this menu the following keys have special functions:
 
- [ENTER] push value to stack and exit mode                [+/-] negate
+ [ENTER] push value to stack and exit mode
  [^] prev part   [7] real part       [8] imaginary part   [<=] exit mode
  [v] next part   [4] absolute part   [5] angle part
                  [0] prev part       [.] next             [R/S] exit mode
@@ -417,7 +418,7 @@ ASIN [ASIN]    ... Arcus sine (inverse)
 ATAN [ATAN]    ... Arcus tangent (inverse)
 BEG            ... Begin a BEGIN-UNTIL-loop
 CHS  [+/-]     ... Change sign (negate)
-CLK            ... Runs clock (see time) until break (R/S or DROP)
+CLK            ... Runs TIME until break ([R/S] or [<=])
 CLR  [CLEAR]   ... Clear stack
 CONS [FLAGS]   ... Physical constants (CODATA)
 CONV [CONVERT] ... Unit conversions
@@ -426,7 +427,6 @@ CPLX [COMPLEX] ... Enter/deenter complex number (TOS-1, TOS)(see Cmod, R/S)
 Cmod [MODES]   ... Toggle complex number input mode (Rectangular or Polar)
 DICT [CATALOG] ... Dictionary
 DISP [DISP]    ... Change display color or screenshot (hold SHIFT)
-DN   [v]       ... Down (menu navigation)
 DROP [<=]      ... Drop TOS
 DUP  [ENTER]   ... Enter number input or duplicate TOS
 E    [E]       ... Scientific notation
@@ -438,13 +438,14 @@ Fint [INTGRT]  ... Integrate selected user program (from TOS-1 to TOS)
 Fplt [PRINT]   ... Plot selected user program (from TOS-1 to TOS)
 Fslp           ... Slope of selected user program at TOS
 Fslv [SOLVE]   ... Solve selected user program (close to start value TOS)
-HELP [CUSTOM]  ... Browse html file /IV42/index.htm
+HELP [CUSTOM]  ... Browse html file /IV42/iv42help.htm
 HEX            ... Toggle HEX DEC view
 HOLD           ... Interrupt program execution (R/S key continues)
 HYP            ... Switch trigonometic to hyperbolic functions (and vice versa)
 IF             ... Execute following code if true
 INT            ... Integer value of TOS
 INV  [1/x]     ... Inverse
+IMG  [v]       ... View help image /IV42/iv42help.bmp
 KEY?           ... Interrupt program execution until keypress
 LN   [LN]      ... Natural logarithm
 LN!            ... Natural logarithm of gamma of TOS
@@ -498,7 +499,7 @@ TIME           ... Push time of RTC to stack (24h format)
 Tclr           ... Clear alpha stack (see Tput)
 Tput [ALPHA]   ... Push ascii character (TOS) to alpha stack (status line)
 UNTL           ... Continue executing a BEGIN-UNTIL-loop until TOS is true
-UP   [^]       ... Up (menu navigation)
+UP   [^]       ... Up (menu navigation) and [v] (down)
 XEQ  [XEQ]     ... Execute selected user program
 
 
