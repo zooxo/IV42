@@ -93,6 +93,8 @@ Install IV42:
  * [Press any key to start]
  * [Press EXIT to continue ...]
  * You are running IV42 - have fun!
+ * If you want to use the help file (iv42help.htm) and help image (iv42help.bmp)
+   you have to copy them to the IV42 folder of the USB disk.
 
 Reinstall DM42:
 
